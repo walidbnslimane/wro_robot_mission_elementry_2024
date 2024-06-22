@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Points Calculator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="redComplete">Red vegetable completely in market area (Max 44):</label>
+                <select id="redComplete">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="redPartial">Red vegetable partly in the market area:</label>
+                <select id="redPartial">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="yellowComplete">Yellow vegetable completely in the compost area (Max 44):</label>
+                <select id="yellowComplete">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="yellowPartial">Yellow vegetable partly in the compost area:</label>
+                <select id="yellowPartial">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="waterGreen">Water element touching green square around green vegetable (Max 30):</label>
+                <select id="waterGreen">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="earthBlock">Earth block not touching any green square area (Max 9):</label>
+                <select id="earthBlock">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chicken">Chicken is not damaged or moved:</label>
+                <select id="chicken">
+                    <option value="0">no</option>
+                    <option value="1">yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fence">Fence is not damaged or moved (Max 12):</label>
+                <select id="fence">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculatePoints()">Calculate Total Points</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+        <div id="result">
+            <h2>Total Points: <span id="totalPoints">0</span> </h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

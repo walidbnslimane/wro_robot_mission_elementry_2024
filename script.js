@@ -3,7 +3,7 @@ function calculatePoints() {
   let redPartial = parseInt(document.getElementById("redPartial").value) * 4;
   let yellowComplete = parseInt(document.getElementById("yellowComplete").value) * 11;
   let yellowPartial = parseInt(document.getElementById("yellowPartial").value) * 4;
-  let waterGreen = parseInt(document.getElementById("waterGreen").value) * 3;
+  let waterGreen = parseInt(document.getElementById("waterGreen").value) * 10;
   let earthBlock = parseInt(document.getElementById("earthBlock").value) * 3;
   let chicken = parseInt(document.getElementById("chicken").value) * 3;
   let fence = parseInt(document.getElementById("fence").value) * 3;
